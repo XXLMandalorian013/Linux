@@ -1,0 +1,3 @@
+WAN=$(curl -s ifconfig.me)
+
+echo $WAN
