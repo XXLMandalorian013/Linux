@@ -1,3 +1,4 @@
+#!/bin/bash
 # vars
 conn_name="wifi-connection-name-here"
 iface="wlan0"
