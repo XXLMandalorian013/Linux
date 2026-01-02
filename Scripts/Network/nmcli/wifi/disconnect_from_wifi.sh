@@ -1,3 +1,4 @@
+#!/bin/bash
 # vars
 conn_name="Connection-Name-Here"
 ## script start ##
