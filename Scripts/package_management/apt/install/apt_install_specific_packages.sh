@@ -1,8 +1,8 @@
 #!/bin/bash
 # vars
-pack_name="firefox chromium vlc"
+package_name="firefox chromium vlc"
 ## script start ##
-# updates a specific package w/ out prompting.
-sudo apt install "$pack_name" -y
+# installs a specific packages w/ out prompting.
+sudo apt install "$package_name" -y
 ## script end ##
 
