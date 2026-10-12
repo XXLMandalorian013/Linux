@@ -5,7 +5,8 @@ iface="eth0"
 method="manual"
 ipv4="XXX.XXX.XXX.XXX/24"
 gateway="XXX.XXX.XXX.X"
-dns="XXX.XXX.XXX.XXX"
+dns1="XXX.XXX.XXX.XXX"
+dns2="XXX.XXX.XXX.XXX"
 disable="disabled"
 ## script start ##
 # check if the connection exists, if not, create it
@@ -23,7 +24,7 @@ sudo nmcli con mod "$conn_name" \
     ipv4.method manual \
     ipv4.addresses "$ipv4" \
     ipv4.gateway "$gateway" \
-    ipv4.dns "$dns" \
+    ipv4.dns "$dns1 $dns2" \
     ipv4.ignore-auto-dns yes \
     ipv6.method "$disable"
 # enable the connection
